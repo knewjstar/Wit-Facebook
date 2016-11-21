@@ -72,7 +72,13 @@ const actions = {
   ['fetch-weather'](sessionId, context, cb) {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
-    context.forecast = 'sunny';
+    context.forecast = 'partly-cloudy';
+    cb(context);
+  },
+  
+  //goal bot
+   ['getGoal'](sessionId, context, cb) {
+    context.goal = 'this is my goal there are many like it but this one is mine';
     cb(context);
   },
 };
